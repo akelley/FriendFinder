@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder Survey Page</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+			<h1 class="text-center"><span class="glyphicon glyphicon-star-empty"></span>FriendFinder</h1>
+			<hr>
+			<h2 class="text-center">Survey Page</h2>
+			<h3 class="text-center"><a href="/"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a></h3>
+		</div>
+
+   <div class="row">
+  	<div class="col-lg-12">
+  		<div class="panel panel-default">
+  			<div class="panel-heading">
+  				<h4 class="panel-title">Please enter some basic information about yourself first:</h4>
+  			</div>
+  			<div class="panel-body">
+  				<form role="form">
+						<div class="form-group">
+							<label for="">Please enter your name (required):</label>
+							<input type="text" class="form-control" id="name" required>
+						</div>
+						<div class="form-group">
+							<label for="">Please enter a URL to a picture of yourself:</label>
+							<input type="url" class="form-control" id="selfie">
+						</div>
+  				</form>
+  			</div>
+
+  			<div class="panel-heading" style="border-top: 1px solid #ddd">
+  				<h4 class="panel-title">Please answer these questions:</h4>
+  			</div>
+  			<div class="panel-body">
+  				<form role="form">
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">1. My partner's political views are of the utmost importance.</h5>
+						  <select class="selectpicker" id="question_1" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<br>
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">2. I am not uncomfortable with public displays of affection (PDAs).</h5>
+						  <select class="selectpicker" id="question_2" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<br>
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">3. I like to be the center of attention.</h5>
+						  <select class="selectpicker" id="question_3" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<br>
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">4. I often find myself exhausted after speaking with others.</h5>
+						  <select class="selectpicker" id="question_4" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<br>
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">5. Being married someday is very important to me.</h5>
+						  <select class="selectpicker" id="question_5" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<br>
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">6. Couples should live together before getting married.</h5>
+						  <select class="selectpicker" id="question_6" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<br>
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">7. I consider myself a highly religious person.</h5>
+						  <select class="selectpicker" id="question_7" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<br>
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">8. Being sexually experienced helps people know what they want in a relationship.</h5>
+						  <select class="selectpicker" id="question_8" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<br>
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">9. I find it relatively easy to get close to people.</h5>
+						  <select class="selectpicker" id="question_9" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<br>
+						<div class="form-group">
+							<h5 style="margin-bottom: 10px; font-weight: bolder">10. I feel comfortable depending on others.</h5>
+						  <select class="selectpicker" id="question_10" style="border-radius: 5px">
+						  	<option value=""></option>
+						    <option value="1">1 - (Strongly Disagree)</option>
+						    <option value="2">2</option>
+						    <option value="3">3 - (Feel Neutrally)</option>
+						    <option value="4">4</option>
+						    <option value="5">5 - (Strongly Agree)</option>
+						  </select>
+						</div>
+						<button type="submit" type="button" class="btn btn-primary submit" style="margin-top: 10px; width: 20%">Submit</button>
+  			</div>
+  		</div>  	
+  	</div>
+  </div>
+
+	  <div class="modal fade" id="friendModal" role="dialog">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" style="font-weight: bolder">Closest Match Found:</h4>
+		      </div>
+		      <div class="modal-body">
+		        <h4 id="matchName"></h4>
+		        <img src="" alt="" id="matchImage" height="400" width="400">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+  <footer>
+		<div class="container">
+				<p><a href="#" id="clear">Clear Table</a> | <a href="/api/friends">API Friends Link</a> | <a href="https://github.com/akelley/FriendFinder" target="_blank">GitHub Repo</a></p>
+		</div>
+  </footer>
+
+	<script type="text/javascript">
+		$(".submit").on("click", function(e) {
+			for(var i = 0; i < 10; i++){
+				if($("#name").val().trim() == ""){
+					alert("Please fill out your name.");
+					return false;
+				}
+
+				if($("#question_" + (i+1)).val().trim() == ""){
+					alert("Please fill out all the questions.");
+					return false;
+				}
+			}
+			pushFriend();
+			e.preventDefault();
+		});
+
+		function pushFriend(){
+			var array = [];
+		  for(var i = 0; i < 10; i++){
+	  		array[i] = $("#question_" + (i+1)).val().trim();
+	  	}
+
+	    var newFriend = {
+	    	name: $("#name").val().trim(),
+	    	photo: $("#selfie").val().trim(),
+	    	scores: array  	
+	    };
+
+	   	//console.log(newFriend);
+	   	var currentURL = window.location.origin;
+			$.post(currentURL + "/api/friends", newFriend, function(data, status){
+				$("#matchName").text(data.name);
+				$("#matchImage").attr("src", data.photo);
+				$('#friendModal').modal('toggle');
+				//alert("Status: " + status);	
+			});
+
+			// clear the fields
+			$("#name, #selfie").val("");
+			for(var i = 0; i < 10; i++){
+				$("#question_" + (i+1)).val("");
+			}
+	  };
+
+		function clearTable(){
+			var currentURL = window.location.origin;
+				$.ajax({url: currentURL + "/api/clear", method: "POST"});
+		};
+
+		$("#clear").on('click', function(){
+			alert("Clearing tables...");
+			clearTable();
+			location.reload();
+		});
+
+	</script>
+</body>
+</html>
