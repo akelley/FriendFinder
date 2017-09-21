@@ -29,5 +29,19 @@
 		</div>
   </footer>
 
+<script type="text/javascript">
+  function clearTable(){
+    var currentURL = window.location.origin;
+      $.ajax({url: currentURL + "/api/clear", method: "POST"});
+  };
+
+  $("#clear").on('click', function(){
+    alert("Clearing tables...");
+    clearTable();
+    location.reload();
+  });
+
+</script>
+
 </body>
 </html>
