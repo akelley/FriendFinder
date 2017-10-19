@@ -14,7 +14,7 @@ The FriendFinder demo can be found [here](https://glacial-citadel-82763.herokuap
 
 To run the application locally, first clone this repository with the following command:
 
-	git clone https://github.com/akelley/FriendFinder.gitit
+	git clone https://github.com/akelley/FriendFinder.git
 	
 Then, install the application dependencies:
 
